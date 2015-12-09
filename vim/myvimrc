@@ -1,0 +1,78 @@
+"vundle settings
+"--------------
+
+	set nocompatible              " be iMproved, required
+	filetype off                  " required
+
+	" set the runtime path to include Vundle and initialize
+	set rtp+=~/.vim/bundle/Vundle.vim
+	call vundle#begin()
+
+	" let Vundle manage Vundle, required
+	Plugin 'scrooloose/nerdtree'
+	"Plugin 'vim-scripts/taglist.vim'
+	Plugin 'majutsushi/tagbar'
+	Plugin 'bling/vim-airline'
+	Plugin 'Valloric/YouCompleteMe'
+	Plugin 'hari-rangarajan/CCTree' 
+
+	call vundle#end()
+	filetype plugin indent on
+
+"Basic settings
+"--------------
+	set background=dark
+	" for syntax colouring 
+	syntax on
+	" to set line numbers	
+	set number
+	" to set highlight search
+	set hlsearch
+	"auto indentation
+	"set autoindent
+	"tab completion shizzel
+	"set wildmenu
+	"set wildmode=list:longest,full
+	"the percentage of file traversed
+	set ruler
+	"set tab
+	set tabstop=4
+	"mouse support
+	set mouse=a
+	"folding based on syntax
+	:setlocal foldmethod=syntax
+	
+	set mouse+=a
+	if &term =~ '^screen'
+    	set ttymouse=xterm2
+    endif
+	highlight Comment ctermfg=gray
+    
+
+"NERDTREE
+"--------
+	map <F7> :NERDTreeToggle<cr>
+	let g:NERDTreeWinPos = "left"
+
+" airline
+"--------
+	set laststatus=2
+	set t_Co=256
+	let g:airline_section_warning = 0 
+	let g:airline_section_b= 0 
+	let g:airline_section_y= 0 
+	let g:airline_theme='wombat'
+	"call airline#parts#define_accent('a', 'red')
+	"set noshowmode
+
+"TAGBAR
+"------
+	"set shortcut
+	nmap <F8> :TagbarToggle<CR>
+ 	let g:tagbar_right = 1 
+	let g:airline_detect_modified=0
+
+"let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+
+
+
