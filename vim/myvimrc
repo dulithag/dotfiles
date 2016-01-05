@@ -40,7 +40,7 @@
 	"mouse support
 	set mouse=a
 	"folding based on syntax
-	:setlocal foldmethod=syntax
+	":setlocal foldmethod=syntax
 	
 	set mouse+=a
 	if &term =~ '^screen'
@@ -76,5 +76,4 @@
 "------
 	let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/bundle/ycm_extra_conf.py'
 	let g:ycm_show_diagnostics_ui = 0
-
 
