@@ -1,0 +1,15 @@
+[user]
+	name = dulitha_g
+	email = dulitha_g@ctl.creative.com
+[review "ctlgitmain.zii.lan:8080"]
+	username = dulitha_g
+[color]
+	ui = auto
+[core]
+	editor = vim
+[commit]
+	template = /home/dulitha/.GitTemplate.txt
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+    lg =log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(bold red)%d%Creset %C(dim green)<%an>%Creset' --abbrev-commit
+ 	lgx = log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(bold red)%d%Creset %C(dim green)<%an>%Creset' --abbrev-commit --max-count=5
