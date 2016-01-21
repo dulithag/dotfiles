@@ -10,6 +10,6 @@
 [commit]
 	template = /home/dulitha/.GitTemplate.txt
 [alias]
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
-    lg =log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(bold red)%d%Creset %C(dim green)<%an>%Creset' --abbrev-commit
- 	lgx = log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(bold red)%d%Creset %C(dim green)<%an>%Creset' --abbrev-commit --max-count=5
+    lg =log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(auto)%d%Creset %C(dim white)<%an>%Creset' --abbrev-commit
+	lgg =log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(auto)%d%Creset %C(dim white)[%ar]%Creset' --abbrev-commit --author=dulitha_g --all
+ 	lgx = log --graph --pretty=format:'%C(yellow)%h%Creset - %s %C(auto)%d%Creset %C(dim white)<%an>%Creset' --abbrev-commit --max-count=5
