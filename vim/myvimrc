@@ -60,6 +60,9 @@
     endif
 	highlight Comment ctermfg=gray
     
+"AutoClose
+"---------
+	let g:AutoClosePumvisible = {"ENTER": "<C-Y>", "ESC": "<ESC>"}
 
 "NERDTREE
 "--------
@@ -94,8 +97,6 @@
 	" If you want :UltiSnipsEdit to split your window.
 	let g:UltiSnipsEditSplit="vertical"
 	inoremap ( (<C-R>=UltiSnips_Anon('($1)$0', '(')<CR> 
-
-
 
 
 "YCM
