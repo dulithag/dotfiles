@@ -53,7 +53,16 @@
 	set mouse=a
 	"folding based on syntax
 	":setlocal foldmethod=syntax
-	
+
+" Auto resize Vim splits to active split
+ set winwidth=84
+ set winheight=5
+ set winminheight=5
+ set winheight=999
+
+	set incsearch
+	set ignorecase 
+
 	set mouse+=a
 	if &term =~ '^screen'
     	set ttymouse=xterm2
@@ -103,5 +112,4 @@
 "------
 	"let g:ycm_global_ycm_extra_conf = '~/.dotfiles/vim/bundle/ycm_extra_conf.py'
 	let g:ycm_show_diagnostics_ui = 0
-
 
