@@ -25,6 +25,7 @@
 	" Snippets are separated from the engine. Add this if you want them:
 	Plugin 'honza/vim-snippets'
 	Plugin 'Townk/vim-autoclose'
+	Plugin 'nanotech/jellybeans.vim'
 
 	call vundle#end()
 	filetype plugin indent on
@@ -54,12 +55,6 @@
 	"folding based on syntax
 	":setlocal foldmethod=syntax
 
-" Auto resize Vim splits to active split
- set winwidth=84
- set winheight=5
- set winminheight=5
- set winheight=999
-
 	set incsearch
 	set ignorecase 
 
@@ -68,6 +63,7 @@
     	set ttymouse=xterm2
     endif
 	highlight Comment ctermfg=gray
+	colorscheme jellybeans
     
 "AutoClose
 "---------
@@ -76,7 +72,7 @@
 "NERDTREE
 "--------
 	map <F7> :NERDTreeToggle<cr>
-	let g:NERDTreeWinPos = "left"
+	let g:NERDTreeWinPos = "right"
 
 " airline
 "--------
@@ -93,7 +89,7 @@
 "------
 	"set shortcut
 	nmap <F8> :TagbarToggle<CR>
- 	let g:tagbar_right= 1 
+ 	let g:tagbar_left= 1 
 	let g:airline_detect_modified=0
 
 "Ulti-snip plugin
